@@ -4,7 +4,11 @@
   "description": "Test for a frontend developer vacancy in NKH Studio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp css",
+    "start": "gulp start"
   },
   "keywords": [
     "test",
@@ -13,6 +17,7 @@
   "author": "MasterOfMenace",
   "license": "ISC",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.8.5",
     "browser-sync": "^2.26.10",
     "gulp": "^4.0.2",

@@ -1,0 +1,15 @@
+.css-table__table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.css-table__row {
+  display: table-row;
+}
+
+.css-table__cell {
+  display: table-cell;
+  border: 2px solid black;
+}

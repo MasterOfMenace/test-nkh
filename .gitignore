@@ -10,3 +10,7 @@ Thumbs.db
 # Вспомогательные файлы
 *.log*
 node_modules/
+
+# Файлы сборки
+source/css/*.css
+source/css/*.map

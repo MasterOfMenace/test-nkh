@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__nav-wrapper">
+      <nav class="main-nav main-nav--open">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <div class="main-nav__items-wrapper">
+            <li class="main-nav__item">
+              <a href="#flex">Flex-каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#inline">Inline-block</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#float">Float</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#table">HTML Table</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#css-table">CSS Table</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="description">
+      <div class="container">
+        <h2>Hello, World!</h2>
+        <p>Эта страница - результат выполнения тестового задания. Она адаптивна под разные размеры дисплеев.</p>
+        <h3>Тестовое задание</h3>
+        <ol>
+          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex (Раздел Flex-каталог с flex-direction: row)</li>
+          <li>Поменять направление осей с дефолтного состояния (Раздел Flex-каталог с flex-direction: column)</li>
+          <li>Выравнять один элемент по поперечной оси</li>
+          <li>Задать выравнивание ряду flex-end</li>
+          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</li>
+          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</li>
+          <li>Создать html таблицу из двух рядов и 4 ячеек</li>
+          <li>Создать таблицу из двух рядов и 4 ячеек используя для разметки только div</li>
+          <li>Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.</li>
+        </ol>
+      </div>
+    </section>
+    <section class="flex-catalogue" id="flex">
+      <div class="container">
+        <h2 class="title">Flex-каталог</h2>
+        <h3>Flex-каталог с flex-direction: row</h3>
+        <ul class="flex-catalogue__list goods-list goods-list--open goods-list--flex">
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-1</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-2</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-3</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-4</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-5</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-6</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-7</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-8</p>
+            </a>
+          </li>
+        </ul>
+
+        <h3>Flex-каталог с flex-direction: column</h3>
+        <ul class="flex-catalogue__list goods-list goods-list--flex goods-list--flex-column">
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-1</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-2</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-3</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-4</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-5</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-6</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-7</p>
+            </a>
+          </li>
+          <li class="goods-list__item">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-8</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="inlineblock-catalogue" id="inline">
+      <div class="container">
+        <h2>Inline-block</h2>
+        <ul class="inlineblock-catalogue-catalogue__list goods-list goods-list--inline-block">
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-1</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-2</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-3</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-4</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-5</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-6</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-7</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--inline-block">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-8</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="float-catalogue" id="float">
+      <div class="container">
+        <h2>Float</h2>
+        <ul class="float-catalogue__list goods-list goods-list--float">
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-1</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-2</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-3</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-4</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-5</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-6</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-7</p>
+            </a>
+          </li>
+          <li class="goods-list__item goods-list__item--float">
+            <a href="#">
+              <div class="goods__image-wrapper">
+                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+              </div>
+              <p class="goods__description">Карточка товара-8</p>
+            </a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <section class="section-table" id="table">
+      <div class="container">
+        <h2>HTML Table</h2>
+        <table class="section-table__table">
+          <tr>
+            <td>Cell1</td>
+            <td>Cell2</td>
+          </tr>
+          <tr>
+            <td>cell3</td>
+            <td>cell4</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="css-table" id="css-table">
+      <div class="container">
+        <h2>CSS Table</h2>
+        <div class="css-table__table">
+          <div class="css-table__row">
+            <div class="css-table__cell">Cell1</div>
+            <div class="css-table__cell">Cell2</div>
+          </div>
+          <div class="css-table__row">
+            <div class="css-table__cell">cell3</div>
+            <div class="css-table__cell">cell4</div>
+          </div>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>

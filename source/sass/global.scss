@@ -1,0 +1,46 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+  }
+}
