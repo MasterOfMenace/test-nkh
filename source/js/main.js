@@ -2,18 +2,14 @@
   const mainNav = document.querySelector('.main-nav');
   const navToggle = document.querySelector('.main-nav__toggle');
 
-  const goodsList = document.querySelector('.goods-list');
-  const sectionTitle = document.querySelector('.title');
+  const accordion = document.querySelector('.accordion');
+  const titles = accordion.querySelectorAll('.accordion__title');
+  const items = accordion.querySelectorAll('.accordion__item');
 
-  sectionTitle.addEventListener('click', () => {
-    if (goodsList.classList.contains('goods-list--open')) {
-      goodsList.classList.remove('goods-list--open');
-      goodsList.classList.add('goods-list--closed');
-    } else {
-      goodsList.classList.remove('goods-list--closed');
-      goodsList.classList.add('goods-list--open');
-    }
-  });
+  const getIndex = (list, elem) => {
+    const index = Array.prototype.indexOf.call(list, elem);
+    return index;
+  }
 
   navToggle.addEventListener('click', () => {
     if (mainNav.classList.contains('main-nav--open')) {
@@ -22,6 +18,22 @@
     } else {
       mainNav.classList.remove('main-nav--closed');
       mainNav.classList.add('main-nav--open');
+    }
+  })
+
+  accordion.addEventListener('click', (evt) => {
+    console.log(evt.target);
+    if (evt.target.classList.contains('accordion__title')) {
+      const index = getIndex(titles, evt.target)
+      const item = items[index];
+
+      if (item.classList.contains('accordion__item--closed')) {
+        item.classList.remove('accordion__item--closed');
+        item.classList.add('accordion__item--open');
+      } else {
+        item.classList.remove('accordion__item--open');
+        item.classList.add('accordion__item--closed');
+      }
     }
   })
 })();

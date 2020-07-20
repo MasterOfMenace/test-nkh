@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div class="sprite">
+    <svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 491.996 491.996" style="enable-background: new 0 0 491.996 491.996;" xml:space="preserve" width="25px" height="25px">
+      <g>
+        <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+          L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+          c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+          c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+          C491.996,136.902,489.204,130.046,484.132,124.986z"/>
+      </g>
+    </svg>
+  </div>
   <header class="page-header">
     <div class="page-header__nav-wrapper">
       <nav class="main-nav main-nav--open">
@@ -42,331 +53,393 @@
         <ol>
           <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex (Раздел Flex-каталог с flex-direction: row)</li>
           <li>Поменять направление осей с дефолтного состояния (Раздел Flex-каталог с flex-direction: column)</li>
-          <li>Выравнять один элемент по поперечной оси</li>
-          <li>Задать выравнивание ряду flex-end</li>
-          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</li>
-          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</li>
-          <li>Создать html таблицу из двух рядов и 4 ячеек</li>
-          <li>Создать таблицу из двух рядов и 4 ячеек используя для разметки только div</li>
-          <li>Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.</li>
+          <li>Выравнять один элемент по поперечной оси (Раздел Flex-каталог с flex-direction: column - 1 элемент)</li>
+          <li>Задать выравнивание ряду flex-end (Раздел Flex-каталог с flex-direction: column)</li>
+          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block (Раздел Inline-block)</li>
+          <li>Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float (Раздел Float)</li>
+          <li>Создать html таблицу из двух рядов и 4 ячеек (Раздел HTML Table)</li>
+          <li>Создать таблицу из двух рядов и 4 ячеек используя для разметки только div (Раздел CSS Table)</li>
+          <li>Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля(Все предыдцщие задания спрятаны в выпадающие блоки аккордеона)</li>
         </ol>
       </div>
     </section>
-    <section class="flex-catalogue" id="flex">
-      <div class="container">
-        <h2 class="title">Flex-каталог</h2>
-        <h3>Flex-каталог с flex-direction: row</h3>
-        <ul class="flex-catalogue__list goods-list goods-list--open goods-list--flex">
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-1</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-2</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-3</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-4</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-5</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-6</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-7</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-8</p>
-            </a>
-          </li>
-        </ul>
+    <section class="accordion">
+      <ul class="accordion__list">
+        <li class="accordion__item accordion__item--closed">
+          <section class="flex-catalogue" id="flex">
+            <div class="container">
+              <h2 class="accordion__title">
+                <span>
+                  Flex-каталог
+                </span>
+                <svg width="25px" height="25px">
+                  <use href="#arrow"/>
+                </svg>
+              </h2>
+              <div class="accordion__content">
+                <h3>Flex-каталог с flex-direction: row</h3>
+                <ul class="flex-catalogue__list goods-list goods-list--open goods-list--flex">
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-1</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-2</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-3</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-4</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-5</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-6</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-7</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-8</p>
+                    </a>
+                  </li>
+                </ul>
 
-        <h3>Flex-каталог с flex-direction: column</h3>
-        <ul class="flex-catalogue__list goods-list goods-list--flex goods-list--flex-column">
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                <h3>Flex-каталог с flex-direction: column</h3>
+                <ul class="flex-catalogue__list goods-list goods-list--flex goods-list--flex-column">
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-1</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-2</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-3</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-4</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-5</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-6</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-7</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-8</p>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <p class="goods__description">Карточка товара-1</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-2</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-3</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-4</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-5</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-6</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-7</p>
-            </a>
-          </li>
-          <li class="goods-list__item">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-8</p>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </div>
 
-    </section>
-    <section class="inlineblock-catalogue" id="inline">
-      <div class="container">
-        <h2>Inline-block</h2>
-        <ul class="inlineblock-catalogue-catalogue__list goods-list goods-list--inline-block">
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+          </section>
+        </li>
+        <li class="accordion__item accordion__item--closed">
+          <section class="inlineblock-catalogue" id="inline">
+            <div class="container">
+              <h2 class="accordion__title">
+                <span>
+                  Inline-block
+                </span>
+                <svg width="25px" height="25px">
+                  <use href="#arrow"/>
+                </svg>
+              </h2>
+              <div class="accordion__content">
+                <ul class="inlineblock-catalogue-catalogue__list goods-list goods-list--inline-block">
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-1</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-2</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-3</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-4</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-5</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-6</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-7</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--inline-block">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-8</p>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <p class="goods__description">Карточка товара-1</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+            </div>
+          </section>
+        </li>
+        <li class="accordion__item accordion__item--closed">
+          <section class="float-catalogue" id="float">
+            <div class="container">
+              <h2 class="accordion__title">
+                <span>
+                  Float
+                </span>
+                <svg width="25px" height="25px">
+                  <use href="#arrow"/>
+                </svg>
+              </h2>
+              <div class="accordion__content">
+                <ul class="float-catalogue__list goods-list goods-list--float">
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-1</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-2</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-3</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-4</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-5</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-6</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-7</p>
+                    </a>
+                  </li>
+                  <li class="goods-list__item goods-list__item--float">
+                    <a href="#">
+                      <div class="goods__image-wrapper">
+                        <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+                      </div>
+                      <p class="goods__description">Карточка товара-8</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
               </div>
-              <p class="goods__description">Карточка товара-2</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+            </div>
+          </section>
+        </li>
+        <li class="accordion__item accordion__item--closed">
+          <section class="section-table" id="table">
+            <div class="container">
+              <h2 class="accordion__title">
+                <span>
+                  HTML Table
+                </span>
+                <svg width="25px" height="25px">
+                  <use href="#arrow"/>
+                </svg>
+              </h2>
+              <div class="accordion__content">
+                <table class="section-table__table">
+                  <tr>
+                    <td>Cell1</td>
+                    <td>Cell2</td>
+                  </tr>
+                  <tr>
+                    <td>cell3</td>
+                    <td>cell4</td>
+                  </tr>
+                </table>
               </div>
-              <p class="goods__description">Карточка товара-3</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
+            </div>
+          </section>
+        </li>
+        <li class="accordion__item accordion__item--closed">
+          <section class="css-table" id="css-table">
+            <div class="container">
+              <h2 class="accordion__title">
+                <span>
+                  CSS Table
+                </span>
+                <svg width="25px" height="25px">
+                  <use href="#arrow" />
+                </svg>
+              </h2>
+              <div class="accordion__content">
+                <div class="css-table__table">
+                  <div class="css-table__row">
+                    <div class="css-table__cell">Cell1</div>
+                    <div class="css-table__cell">Cell2</div>
+                  </div>
+                  <div class="css-table__row">
+                    <div class="css-table__cell">cell3</div>
+                    <div class="css-table__cell">cell4</div>
+                  </div>
+                </div>
               </div>
-              <p class="goods__description">Карточка товара-4</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-5</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-6</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-7</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--inline-block">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-8</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="float-catalogue" id="float">
-      <div class="container">
-        <h2>Float</h2>
-        <ul class="float-catalogue__list goods-list goods-list--float">
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-1</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-2</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-3</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-4</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-5</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-6</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-7</p>
-            </a>
-          </li>
-          <li class="goods-list__item goods-list__item--float">
-            <a href="#">
-              <div class="goods__image-wrapper">
-                <img src="./img/goods-image.jpg" alt="Изображение товара" class="goods__image">
-              </div>
-              <p class="goods__description">Карточка товара-8</p>
-            </a>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </div>
-    </section>
-    <section class="section-table" id="table">
-      <div class="container">
-        <h2>HTML Table</h2>
-        <table class="section-table__table">
-          <tr>
-            <td>Cell1</td>
-            <td>Cell2</td>
-          </tr>
-          <tr>
-            <td>cell3</td>
-            <td>cell4</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <section class="css-table" id="css-table">
-      <div class="container">
-        <h2>CSS Table</h2>
-        <div class="css-table__table">
-          <div class="css-table__row">
-            <div class="css-table__cell">Cell1</div>
-            <div class="css-table__cell">Cell2</div>
-          </div>
-          <div class="css-table__row">
-            <div class="css-table__cell">cell3</div>
-            <div class="css-table__cell">cell4</div>
-          </div>
-        </table>
-      </div>
+            </div>
+          </section>
+        </li>
+      </ul>
     </section>
   </main>
+  <footer class="container">
+    <p>Задание выполнил <a href="https://github.com/MasterOfMenace">MasterOfMenace</a></p>
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 </html>

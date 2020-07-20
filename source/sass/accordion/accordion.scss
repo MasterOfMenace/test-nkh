@@ -1,0 +1,41 @@
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__item--open .accordion__title {
+  svg {
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    transform: rotate(180deg);
+  }
+}
+
+.accordion__item--closed .accordion__content {
+  display: none;
+}
+
+.accordion__title {
+  margin: 0;
+  padding: 10px 0;
+  border: 2px solid black;
+  background-color: gray;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  &:active {
+    background-color: white;
+  }
+
+  svg {
+    position: absolute;
+    top: 11px;
+    right: 7px;
+  }
+}
