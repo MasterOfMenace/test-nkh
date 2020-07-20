@@ -15,7 +15,7 @@ deploy:
   github_token: $GH_TOKEN
   skip_cleanup: true
   keep_history: true
-  local_dir: public
+  local_dir: source
   target-branch: gh-pages
   on:
     branch: master
