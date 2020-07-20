@@ -22,7 +22,6 @@
   })
 
   accordion.addEventListener('click', (evt) => {
-    console.log(evt.target);
     if (evt.target.classList.contains('accordion__title')) {
       const index = getIndex(titles, evt.target)
       const item = items[index];
