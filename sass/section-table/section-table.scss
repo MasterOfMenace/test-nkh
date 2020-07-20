@@ -1,0 +1,10 @@
+.section-table__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+
+  th,
+  td {
+    border: 2px solid black;
+  }
+}
